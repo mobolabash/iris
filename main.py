@@ -1,9 +1,10 @@
 import pandas as pd
 import streamlit as st
 import pickle
+import joblib
 
 # Load the model
-model = pickle.load(open('model.pkl', 'rb'))
+model = joblib.load(open('model.pkl', 'rb'))
 
 st.title('Iris Flower Classifier')
 
